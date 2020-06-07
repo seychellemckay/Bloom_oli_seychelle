@@ -9,6 +9,8 @@
         
         <link rel="stylesheet" href="stylesheet.css" />
         
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+        
         <!-- smooth scrolling -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
         
@@ -23,13 +25,13 @@
     
     <body>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
         
         
         <div id="container1">
     
             <div id="nav">
-                <div class="logo"><img src=bloomlogo.png></div>
+                <div class="logo"><img src=images/bloomlogo.png style="width:100%"></div>
                 <div class="links">
                         <a href="#home">HOME</a>
                         &bull;
@@ -83,7 +85,44 @@
 
             <div id="about"></div>
 
+           
+            
             <div id="contact">
+                
+                    <div id="contacttext" style="text-align:center">
+                        <h1>Contact Us</h1>
+                        <p>If you would like to contact us, please fill out the form below.</p>
+                    </div>       
+
+
+
+                    <div class="contactcontainer">
+
+                          <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="Subject">Subject:</label>
+                            <select id="Subject" name="Subject">
+                                <option value="question">Question</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="shipping">Shipping</option> 
+                                <option value="other">Other...</option>
+                            </select>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Type your message here..." style="height:100px"></textarea>
+
+                    <input type="submit" value="Submit" >
+                </div>
+                
+            </div>
+               
+                <div id="footer"> 
+                
+                
                     <i class="fas fa-envelope"></i> info@bloomorganicskincare.com
                     <br>
                     <i class="fas fa-phone"></i> 0800 BLOOM
